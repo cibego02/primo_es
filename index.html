@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bicego</title>
+		<link rel='stylesheet' href='style.css'>
+		
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<header>
+			<h1>Cinema.it</h1>
+			<button class="preLogin" onClick="showForm();">Login</button>
+		</header>
+		<main>
+			<p id ="scritta">Se i film in uscita al cinema nel 2021 non vi hanno fatto venire voglia di tornare in sala, e se quelli del 2023 sono ancora troppo distanti, aspettate di conoscere quelli in arrivo nel 2022, quando la pandemia sarà solo un lontano ricordo.<br>
+				Ci sono tanti buoni motivi per affermare spudoratamente che il cinema non morirà mai, alla faccia di guerre, pandemie e scelte discutibili di certi colossi dell’industria cinematografica (qualsiasi riferimento a Warner e Disney è puramente casuale). E questo perché il grande schermo regala emozioni uniche che altre realtà dell’industria dell’intrattenimento non possono offrire.<br> 	
+				Ora prendetevi un minuto di tempo per spulciare tutte le nuove uscite e farci sapere sulla nostra pagina facebook quale titolo attendete di più. Aggiorneremo l’articolo ogni volta che i distributori confermeranno le date di uscita.</p>
+			<svg width="100%" height="100%"id="cerchio">
+				<defs>
+					<linearGradient id="myGradient" gradientTransform="rotate(90)">
+					  <stop offset="21%" stop-color="#49e6d2" />
+					  <stop offset="89%" stop-color="#4b49e6" />
+					</linearGradient>
+				  </defs>
+			</svg>
+			<svg width="100%" height="100%"id="cerchio1">
+				<defs>
+					<linearGradient id="myGradient" gradientTransform="rotate(90)">
+					  <stop offset="89%" stop-color="#49e6d2" />
+					  <stop offset="21%" stop-color="#4b49e6" />
+					</linearGradient>
+				  </defs>
+			</svg>
+ 
+			<!-- LOGIN div -->
+			<div hidden class="fakebg" id="fakebg"></div>
+			<form hidden id="form">
+				<button class="round" onClick="hideForm();">X</button>
+
+				<h3>Login Here</h3>
+				
+				<label for="username">Username</label>
+				<input type="text" placeholder="Email or Phone" class="input-form">
+
+				<label for="password">Password</label>
+				<input type="password" placeholder="Password" class="input-form">
+		
+				<button class="login">Log In</button>
+			</form>	
+			<div  class="carousel">
+				<circle style="fill: #69b3a2" stroke="black" cx=100 cy=100 r=40></circle>
+				<div class="slides">
+				  <img src="https://upload.wikimedia.org/wikipedia/it/thumb/f/f7/Avatar_film_2009.JPG/1200px-Avatar_film_2009.JPG" alt="slide image" class="slide">
+				  <img src="https://upload.wikimedia.org/wikipedia/it/a/ad/Il_gatto_con_gli_stivali.png" alt="slide image" class="slide">
+				  <img src="https://orgoglionerd.it/wp-content/uploads/2022/04/Spider-Verse.jpg" alt="slide image" class="slide">
+				</div>
+				<div class="controls">
+				  <div class="control prev-slide">&#9668;</div>
+				  <div class="control next-slide">&#9658;</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>credits: Marco Bicego 	</p>
+		</footer>
+		<script type='text/javascript' src='script.js'></script>
+	</body>
+</html>
+
+

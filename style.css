@@ -1,0 +1,231 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #000;
+}
+html {
+	font-size: 16px;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+#cerchio{
+	position: absolute;
+	z-index: 1;
+
+}
+#cerchio1{
+	position: absolute;
+	z-index: 1;
+
+}
+#scritta{
+	color:#FFF;
+	width: 80%;
+	z-index: 2;
+	position: absolute;
+	margin-left: 10%;
+	text-align: center;
+	margin-top: 6%;
+	font-family: 'Poppins',sans-serif;
+}
+.fakebg{
+	background: rgba(0, 0, 0, 0.378);
+	position: absolute;
+	z-index: 3;
+	padding:0;
+    margin:0;
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+	
+}
+
+header {
+	width: 100%;
+	height: 64px;
+	
+	background: linear-gradient(90deg, rgba(36,33,94,1) 0%, rgba(9,121,106,1) 32%, rgba(0,212,255,1) 100%);
+ /* when scrolling, it remains fixed to its position with respect to the window */
+	top: 0;
+	left: 0;
+	color: #FFF;
+	display: flex; /* a way to display items in a layout */
+	justify-content: center; /* horizontal centring */
+	align-items: center; /* vertical centring */	
+}
+
+
+
+footer {
+	width: 100vw;
+	height: 24px;
+	background-color: #FFF;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	font-size: 12px;
+	padding: 4px;
+}
+footer{
+	background: linear-gradient(90deg, rgba(36,33,94,1) 0%, rgba(9,121,106,1) 32%, rgba(0,212,255,1) 100%);
+
+}
+
+/* LOGIN FORM */
+
+
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    z-index: 10;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-form{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.login{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1{
+	padding-left: 40%;
+}
+.preLogin {
+	width: 10%;
+	height: 70%;
+	margin-left:32%;
+	background-color: #fff;
+	border-radius: 24px;
+	border-style: none;
+	box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+	color: #3c4043;
+	font-family: "Google Sans",Roboto,Arial,sans-serif;
+	font-size: 110%;
+	justify-content: left;
+	letter-spacing: .25px;
+	padding: 2px 24px;
+	position: relative;
+	text-align: center;
+	}
+	
+
+/* CAROUSEL */
+.carousel {
+	z-index: 2;
+	width: 80vw;
+	height: 250px;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-top: 20%;
+	margin-left:10%;
+	position: absolute;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  .carousel:hover .controls {
+	opacity: 1;
+	
+  }
+  .carousel .controls {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	justify-content: space-between;
+	width: 100%;
+	z-index: 99999;
+	transition: all ease 0.5s;
+  }
+  .carousel .controls .control {
+	margin: 0 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.7);
+	opacity: 0.5;
+	transition: ease 0.3s;
+	cursor: pointer;
+  }
+  .carousel .controls .control:hover {
+	opacity: 1;
+  }
+  .carousel .slides {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	display: flex;
+	width: 100%;
+	transition: 1s ease-in-out all;
+  }
+  .carousel .slides .slide {
+	min-width: 100%;
+	min-height: 250px;
+	height: auto;
+  }
+  .round {	
+	height: 20px;
+	width: 20px;
+	margin-left: 98%;
+	border-radius: 50%;
+	border: 1px solid rgb(0, 0, 0);
+	
+  }
